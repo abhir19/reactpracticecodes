@@ -1,0 +1,35 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: bisque;
+}
+
+.container {
+    position: absolute;
+    left: 25%;
+    top: 30%;
+    width: 50%;
+    border: 2px dashed black;
+    padding: 2rem;
+    
+}
+.tabs {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    border-top: 2px dashed black;
+}
+
+.first:hover, 
+.previous:hover, 
+.next:hover, 
+.last:hover {
+    cursor: pointer;
+    background: black;
+    color: white;
+}
